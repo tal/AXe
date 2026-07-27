@@ -25,6 +25,27 @@ axe --help
 axe list-simulators
 ```
 
+## Install the AI skill
+
+Install the bundled AXe skill from this repository's marketplace.
+
+Claude Code:
+
+```bash
+claude plugin marketplace add cameroncooke/AXe
+claude plugin install axe@axe
+```
+
+Codex:
+
+```bash
+codex plugin marketplace add cameroncooke/AXe
+codex plugin add axe@axe
+```
+
+> [!NOTE]
+> The marketplace references the existing case-sensitive `Skills/CLI` path directly. It does not include a lowercase `skills/` compatibility symlink, so clients or filesystems that require the conventional lowercase path are unsupported.
+
 ## Xcode compatibility
 
 AXe supports Xcode 26 and Xcode 27. Xcode 27 simulator automation uses Device Hub; Simulator.app is not required.
